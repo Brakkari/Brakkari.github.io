@@ -1,0 +1,171 @@
+*{
+    box-sizing: border-box;
+}
+
+/*
+    ==============================================================================
+    Clearfix
+    ==============================================================================
+*/
+
+
+
+.group:before,
+.groupe:after{
+    content: "";
+    display: table;
+}
+.group:after{
+    clear: both;
+    *zoom: 1;
+
+}
+.group{
+    clear: both
+}
+
+.contaner{
+    display: grid;
+    grid-template-rows: auto;
+    gap: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+	max-width: 80em;
+	 margin: 0 auto;
+	 font-family: sans-serif;
+    padding: 5%;
+}
+
+body{
+    background-color: darkred;
+}
+
+.mindirnar{
+    display: grid;
+    grid-template-columns: auto;
+    background-color: darkred;
+    padding:  5%;
+
+}
+
+figcaption{
+    position: relative;
+    left: 45%;
+    color: orange;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+    margin: 2em;
+}
+
+.mindirnar > div{
+    gap: 2em;
+    margin: 1em;
+    background-color: rgb(78, 0, 0);
+    padding: 5%;
+    padding-right: 22%;
+    justify-content: center;
+
+
+}
+
+header{
+    display: grid;
+    grid-template-rows: auto auto;
+    gap: 0em;
+    margin: 0px;
+}
+
+header > div{
+    color: darkorange;
+    text-align: center;
+    margin: 0em;
+    height: 100%;
+
+}
+
+.headtxt{
+    grid-template-rows: 2fr 1fr;
+    background-color: rgb(78, 0, 0);
+    padding: 5%;
+    padding-right: 10%;
+    margin-top: 0em;
+    align-items: center;
+    justify-content: center;
+}
+
+.headtextin{
+    position: relative;
+    left: 3%;
+}
+
+.textin{
+    background-color: rgb(78, 0, 0);
+    font-size: 16px;
+    margin: 1em;
+    padding: 5%;
+    color: darkorange;
+    outline: orange;
+}
+
+.textin > div{
+    background-color: rgb(78, 0, 0);
+}
+
+
+@media only screen and (min-width:37.5em){
+
+    .mindirnar{
+        display: grid;
+        grid-template-columns: 1fr;
+    
+        padding:  5%;
+    }
+    .textin{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .mindirnar > div{
+        width: auto;
+    }
+
+
+}
+
+@media only screen and (min-width:48em){
+
+    .mindirnar{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    
+        padding:  5%;
+    }
+    .textin{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .mindirnar > div{
+        width: auto;
+    }
+}
+
+@media only screen and (min-width:60em){
+
+    .mindirnar{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    
+        padding:  5%;
+    }
+    .textin{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .mindirnar > div{
+        width: auto;
+    }
+}

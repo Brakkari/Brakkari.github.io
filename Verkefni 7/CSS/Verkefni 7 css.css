@@ -1,0 +1,380 @@
+*{
+    box-sizing: border-box;
+}
+
+/*
+    ==============================================================================
+    Clearfix
+    ==============================================================================
+*/
+
+.group:before,
+.groupe:after{
+    content: "";
+    display: table;
+}
+
+.group:after{
+    clear: both;
+    *zoom: 1;
+
+}
+
+.group{
+    clear: both
+}
+
+header, main{
+    display: grid;
+    background: rgb(2,0,36);
+    background: linear-gradient(0deg, rgba(8,94,0,1) 0%, rgba(0,135,4,1) 30%, rgba(43,241,38,1) 100%);
+    
+}
+
+header > p{
+    text-align: center;
+}
+header > h1{
+    text-align: center;
+}
+
+body{
+    margin: 0 auto;
+    
+}
+
+.contaner{
+    display: grid;
+    grid-template-columns: auto;
+    background-color: rgb(0, 0, 0);
+    background-image: url(https://netrinoimages.s3.eu-west-2.amazonaws.com/2018/01/16/489329/207675/space_hdr_texture_of_stars_3d_model_c4d_max_obj_fbx_ma_lwo_3ds_3dm_stl_2189967_o.png);
+    gap: 10px;
+    min-width: 100%;
+}
+
+h1{
+    text-align: center;
+    padding: 5%;
+    margin: 0 auto;
+}
+
+p{
+    padding: 2%;
+    margin: 0 auto;
+}
+
+header > h1{
+    padding: 2%;
+}
+
+header > p{
+    padding: 2%;
+}
+
+.space{
+    height: 40em;
+    max-height: 40em;;
+    min-width: 100%;
+    background-image: url("../mindir/OuterWilds.webp");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.gluggi {
+    width:18em; /*~300px */ 
+    height:10.5em; /*168px;*/ 
+}
+.midja, body{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.idontownthis{
+    text-align: center;
+    font-size: 25px;
+}
+
+.maintxt{
+    font-size: 20px;
+}
+
+.gifthing{
+    display: flex;
+    justify-content: center;
+}
+
+hr{
+    border-color: black;
+    background-color: black;
+}
+
+.REVIEWSh4{
+    padding-left: 5%;
+    
+}
+
+.midja{
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 50.25%;
+}
+
+.gluggi { 
+    position: absolute;
+    
+    top: 5%;
+
+    margin: 0 auto;
+    width: 90%;
+    height: 90%;
+    background-color: black;
+}
+
+footer{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 5px;
+    padding:  5%;
+}
+
+footer{
+    color: #e9e1d3;
+    background-color: rgb(0, 54, 0);
+    font-size: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-right: 0.5em;
+}
+ 
+.heimildir{
+    font-size: 14px;
+    text-align: center;
+}
+
+footer{
+
+    font-style: normal;
+    font-weight: normal;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.innermenu{
+    z-index: 99999;
+}
+
+nav{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 5px;
+    padding:  3%;
+}
+
+.innermenu{
+    position: sticky ;
+    display: flex inline;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    margin: none;
+    padding: none;
+}
+     
+a:link{
+    color: white;
+}
+a:visited{
+    color: white;
+}
+a:hover{
+    color: rgb(255, 0, 0);
+}
+a:active{
+    color: white;
+}
+
+.innermenu > div{
+    margin: 0.1em;
+    padding: 0.6em;
+    font-size: 1þ5em;
+    gap: 2px;
+    background-color: rgba(43,241,38,1);
+    border: black solid;
+
+
+}
+
+.toptakki{
+    position: fixed;
+    bottom: 2.26em;
+    right: 2.53em;
+    font-size: 20px;
+    color: white;
+}
+
+.toptakki > a{
+    z-index: 9999999999;
+}
+
+.hringur {
+    width: 50px;
+    height: 50px;
+    background: rgba(43,241,38,1);
+    border: 2px solid #000;
+    border-radius: 50%;
+    text-align: center;
+    position: fixed;
+    bottom: 2em;
+    right: 2em;
+}
+
+@media only screen and (min-width:60em){
+    
+    .contaner{
+        display: grid;
+        grid-template-rows: auto;
+        gap: 10px;
+        max-width: 80em;
+        padding: 5%;
+
+    }
+
+}
+
+@media only screen and (max-width:48em){
+    footer{
+        grid-template-columns: 1fr 1fr 1fr;
+        font-size: 15px;
+    }
+}
+
+    
+
+
+@media only screen and (max-width:48em){
+    .contaner{
+        padding: 0;
+
+    }
+}
+
+@media screen and (max-width: 25em) {
+    .space{
+        height: 15em;
+    }
+}
+
+
+@media screen and (min-width: 25em) {
+    .gluggi {
+ 
+      height:13em; /*207px;*/ 
+    }
+    .space{
+        height: 20em;
+    }
+}
+
+
+@media screen and (min-width: 35.7em) {
+    .gluggi {
+
+     height:15.75em; /*252px;*/ 
+   }
+   .space{
+    height: 30em;
+    }
+}
+
+@media screen and (min-width: 48em) {
+    .gluggi {
+
+      height:19.7em; /*315px;*/
+    }
+    .space{
+        height: 35em;
+    }
+ }
+
+ @media screen and (min-width:60em){
+    .gluggi {
+
+    height:24.6em; /*414px;*/ 
+    }
+    .space{
+    height: 50em;
+    }
+}
+@media screen and (min-width:80em){
+  .gluggi {
+
+    height:33em; /*534px;*/ 
+  }
+  .space{
+    height: 50em;
+    }
+}
+@media screen and (min-width: 100em) {
+    .gluggi { 
+
+      height:44em; /*~702px;*/ 
+    }
+    .space{
+        height: 50em;
+    }
+
+} 
+
+@media only screen and (max-width:48em){
+    footer{
+        grid-template-columns: 1fr;
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width:35.7em){
+
+    .innermenu{
+        position: sticky ;
+        display: flex block;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        margin: 0;
+        font-size: 0.9em;
+    }
+    .innermenu > div{
+        margin: 0em;
+        padding: 0.6em;
+        font-size: 0.8em;
+        gap: 0px;
+        background-color: rgba(43,241,38,1);
+        max-height: 10em;
+        border: black solid;
+
+    }
+
+}
+
+@media only screen and (max-width:48em){
+
+    .innermenu{
+        position: static ;
+        display: flex inline;
+        top: 0;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+    }
+    
+    .innermenu > div{
+        margin: 0.1em;
+        padding: 0.6em;
+        font-size: 0.8em;
+        gap: 0px;
+        background-color: rgba(43,241,38,1);
+        border: black solid;
+    
+    }
+}
