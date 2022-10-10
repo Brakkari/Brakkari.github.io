@@ -10,13 +10,19 @@ fyrir verkefnið átti maður að búa til vefsíðu fyrir heihvern leik eða t�
 
 Outer wilds er eitt af uppahalds leikjunum mínum og ég vildi Búa til vefsíðu fyrir það
 
-Í verkefninu átti ég að setja inn:
+Í verkefninu átti ég að setja inn: (sem ég hef gert)
 
 #
 
   Eigin Github geymlu
   
   Heimildaskrá
+  
+  Mindvand (oftast Youtube)
+  
+  Navigation bar
+  
+  Góðan footer sem hefur önnur verkefni sem þú hefur búið til
   
   Að hafa góðan Uppsetning kóðans
   
