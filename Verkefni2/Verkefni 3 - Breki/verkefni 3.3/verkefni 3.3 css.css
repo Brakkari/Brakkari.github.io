@@ -1,0 +1,178 @@
+*{
+    box-sizing: border-box;
+}
+
+/*
+    ==============================================================================
+    Clearfix
+    ==============================================================================
+*/
+
+
+
+.group:before,
+.groupe:after{
+    content: "";
+    display: table;
+}
+.group:after{
+    clear: both;
+    *zoom: 1;
+
+}
+.group{
+    clear: both
+}
+
+body {
+	max-width: 80em;
+	 margin: 0 auto;
+	 font-family: sans-serif;
+	 padding-right: 5%;
+	 padding-left: 5%;
+}
+
+nav, header, main, footer{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 5px;
+}
+
+
+
+
+main{
+    border: 2px blue solid;
+}
+
+.border{
+    border: 20x black solid;
+    padding: 1%;
+}
+
+
+
+.headdiv{
+    border: red solid 3px;
+    text-align: center;
+    padding: 2%;
+}
+.textbig1{
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+}
+nav{
+    border: 2px orange solid;
+}
+
+blockquote{
+    border: black solid 1px;
+    padding: 1em;
+}
+
+mark{
+    background-color: transparent;
+}
+footer{
+    border: black solid 1px;
+    padding: 0.6em;
+    font-size: 0.8em;
+}
+
+@media only screen and (min-with:37.5em){
+
+    .grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    border: 1px black solid;
+    padding: 10px;
+}
+.aside1, .aside2{
+    border: 2px black solid;
+    margin: 5px;
+    padding: 5px;
+}
+.section1{
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 10px;
+    border: solid black 1px;
+    gap: 1em;
+}
+nav{
+    border: 2px orange solid;
+}
+footer{
+    border: black solid 1px;
+    padding: 0.6em;
+    font-size: 0.8em;
+}
+}
+
+@media only screen and (min-width:48em){
+
+    .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    padding: 10px;
+    }
+    .section1{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 10px;
+    }
+    .aside1, .aside2{
+        margin: 5px;
+        padding: 5px;
+    }
+    .flexthing1{
+        display: flex;
+        justify-content: center;
+    }
+    .flexthing1 > div{
+        margin: 1em;
+        padding: 0.6em;
+        font-size: 0.8em;
+    }
+    footer{
+        border: black solid 1px;
+        padding: 0.6em;
+        font-size: 0.8em;
+    }
+}
+
+@media only screen and (min-width: 60em) {  
+    body{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 10px;
+        }
+    .aside1, .aside2{
+        margin: 5px;
+        padding: 5px;
+    }
+    .section1{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 10px;
+    }
+    .flexthing1{
+        display: flex;
+        justify-content: center;
+    }
+    .flexthing1 > div{
+        margin: 1em;
+        padding: 0.1%;
+        font-size: 0.8em;
+    }
+    footer{
+        border: black solid 1px;
+        padding: 0.6em;
+        font-size: 1em;
+    }
+  }

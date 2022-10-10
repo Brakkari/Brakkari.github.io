@@ -1,0 +1,365 @@
+*{
+    box-sizing: border-box;
+}
+
+/*
+    ==============================================================================
+    Clearfix
+    ==============================================================================
+*/
+
+
+
+.group:before,
+.groupe:after{
+    content: "";
+    display: table;
+}
+.group:after{
+    clear: both;
+    *zoom: 1;
+
+}
+.group{
+    clear: both
+}
+
+@font-face {
+    font-family: Inria Sans;
+    src: url(InriaSans-Regular.tts);
+  }
+
+.contaner{
+    display: grid;
+    grid-template-rows: auto;
+    gap: 10px;
+    font-family: 'Inria Sans', ;
+}
+
+body {
+	max-width: 80em;
+	 margin: 0 auto;
+	 font-family: 'Inria Sans',;
+    padding: 5%;
+}
+
+
+
+/* hér er öllum stílum sópað saman í eina skipun "font:"*/
+body {
+    font: 100%/120% Georgia, Times, serif;
+    font-family: 'Inria Sans',;
+    /*font-style, -weight, -size/-lineheight -family */
+}
+
+body{
+
+    background-color: #639BF1;
+}
+
+body {
+    font-style: normal;      /* italic , obligue */
+    font-weight: normal;     /* bold , 100 - 900 */
+    font-size: 1em;          /* 1px , 1rem , 100% */
+         /* tekur mið af einingunni sem er á font-size, staðlað 1.3 */
+
+    /* vafrinn tekur Helvetica ef það er til, annars system font (sans-serif) */ 
+}
+
+
+
+nav, footer, body{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 5px;
+    padding:  5%;
+}
+
+
+
+.mindirnar{
+    display: grid;
+    grid-template-columns: auto;
+    background-color: #3ec303;
+    padding:  5%;
+
+}
+
+figcaption{
+    position: relative;
+    left: 45%;
+    color: #FFF2E7;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+    margin: 2em;
+}
+
+
+
+header{
+    display: grid;
+    grid-template-rows: auto auto;
+    gap: 0em;
+    margin: 0px;
+}
+
+header > div{
+    color: #FFF2E7;
+    text-align: center;
+    margin: 0em;
+    height: 100%;
+
+}
+
+.headtxt{
+    grid-template-rows: 2fr 1fr;
+    background-color: #007849;
+    padding: 5%;
+    padding-right: 10%;
+    margin-top: 0em;
+    align-items: center;
+    justify-content: center;
+}
+
+.headtextin{
+    position: relative;
+    left: 3%;
+}
+
+.textin{
+    background-color: #007849;
+    font-size: 16px;
+    margin: 1em;
+    padding: 5%;
+    color: #e9e1d3;
+}
+
+.textin > div{
+    background-color: #007849;
+}
+
+.hljóð{
+    display: block;
+    margin-top: 2em;
+    margin-left: auto;
+    margin-right: auto
+}
+
+
+
+
+@media only screen and (min-width:37.5em){
+
+    .mindirnar{
+        display: grid;
+        grid-template-columns: 1fr;
+    
+        padding:  5%;
+    }
+    .textin{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .mindirnar > div{
+        width: auto;
+    }
+
+
+}
+
+@media only screen and (min-width:48em){
+
+
+    .textin{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .mindirnar > div{
+        width: auto;
+    }
+}
+
+@media only screen and (min-width:60em){
+
+    .textin{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .mindirnar > div{
+        width: auto;
+    }
+}
+
+body{
+    line-height: 1.2;
+}
+
+.miðja{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.gluggi {
+    width:18em; /*~300px */ 
+    height:10.5em; /*168px;*/ 
+}
+
+h1{
+    font-size: 4em;
+}
+
+  @media screen and (min-width: 25em) {
+    .gluggi {
+      width:24em; /*368px;*/ 
+      height:13em; /*207px;*/ 
+    }
+    .gluggi2 {
+        width:13em; /*368px;*/ 
+        height:13em; /*207px;*/ 
+      }
+ }
+
+@media screen and (min-width: 39em) {
+    .gluggi {
+      width:24em; /*368px;*/ 
+      height:13em; /*207px;*/ 
+    }
+    .gluggi2 {
+        width:13em; /*368px;*/ 
+        height:13em; /*207px;*/ 
+      }
+ }
+
+@media screen and (min-width: 35.7em) {
+    .gluggi {
+     width:29em;     /*448px*/
+     height:15.75em; /*252px;*/ 
+   }
+   .gluggi2 {
+    width:15.75em;     /*448px*/
+    height:15.75em; /*252px;*/ 
+  }
+ }
+
+@media screen and (min-width: 48em) {
+    .gluggi {
+      width:35em;     /*560px;*/
+      height:19.7em; /*315px;*/
+    }
+    .gluggi2 {
+        width:19.7em;     /*448px*/
+        height:19.7em; /*252px;*/ 
+      }
+ }
+
+ @media screen and (min-width:60em){
+  .gluggi {
+    width:46em; /*736px;*/ 
+    height:24.6em; /*414px;*/ 
+  }
+  .gluggi2 {
+    width:24.6em;     /*448px*/
+    height:24.6em; /*252px;*/ 
+  }
+}
+@media screen and (min-width:80em){
+  .gluggi {
+    width:58em; /*950px;*/ 
+    height:33em; /*534px;*/ 
+  }
+  .gluggi2 {
+    width:33em;     /*448px*/
+    height:33em; /*252px;*/ 
+  }
+}
+@media screen and (min-width: 100em) {
+    .gluggi { 
+      width:78em; /*1248px;*/ 
+      height:44em; /*~702px;*/ 
+    }
+        .gluggi2 {
+        width:44em;     /*448px*/
+        height:44em; /*252px;*/ 
+      }
+} 
+
+footer{
+    color: #e9e1d3;
+    background-color: #007849;
+    font-size: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-right: 0.5em;
+}
+
+
+
+@media only screen and (max-width:48em){
+footer{
+    grid-template-columns: 1fr 1fr 1fr;
+    font-size: 15px;
+}
+}
+@media only screen and (max-width:37.5em){
+    footer{
+        grid-template-columns: 1fr;
+        font-size: 15px;
+    }
+    .innermenu{
+        position: sticky ;
+        display: flex inline;
+        top: 0;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        font-size: 0.9em;
+    }
+    .innermenu > div{
+        margin: 0em;
+        padding: 0.6em;
+        font-size: 0.8em;
+        gap: 0px;
+        background-color: dodgerblue;
+        max-height: 6em;
+
+    }
+    .contaner{
+        padding-left: 0;
+        padding-right: 0;
+
+    }
+    .contaner{
+        padding-left: 0;
+        padding-right: 0;
+        margin: 0;
+    }
+}
+@media only screen and (max-width:48em){
+    footer{
+        grid-template-columns: 1fr;
+        font-size: 15px;
+    }
+    .innermenu{
+        position: sticky ;
+        display: flex inline;
+        top: 0;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+    }
+    .innermenu > div{
+        margin: 0.1em;
+        padding: 0.6em;
+        font-size: 0.8em;
+        gap: 0px;
+        background-color: dodgerblue;
+    
+    }
+    .contaner{
+        padding-left: 0;
+        padding-right: 0;
+    }
+}

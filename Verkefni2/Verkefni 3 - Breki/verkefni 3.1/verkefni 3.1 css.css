@@ -1,0 +1,64 @@
+*{
+    box-sizing: border-box;
+}
+
+/*
+    ==============================================================================
+    Clearfix
+    ==============================================================================
+*/
+
+
+
+.group:before,
+.groupe:after{
+    content: "";
+    display: table;
+}
+.group:after{
+    clear: both;
+    *zoom: 1;
+
+}
+.group{
+    clear: both
+}
+
+body {
+	max-width: 80em;
+	 margin: 0 auto;
+	 font-family: sans-serif;
+	 padding-right: 5%;
+	 padding-left: 5%;
+}
+
+.grid-container1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: 1px black solid;
+    padding: 10px;
+}
+
+.grid-container2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border: 1px black solid;
+    padding: 10px;
+}
+
+.grid-container3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    border: 1px black solid;
+    padding: 10px;
+}
+
+
+  .grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+
+    padding: 20px;
+    font-size: 20px;
+
+  }
+
