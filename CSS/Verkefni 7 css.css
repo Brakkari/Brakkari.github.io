@@ -79,6 +79,10 @@ header > p{
     background-repeat: no-repeat;
     background-size: contain;
 }
+.center{
+    margin: auto;
+}
+
 
 .gluggi {
     width:18em; /*~300px */ 
