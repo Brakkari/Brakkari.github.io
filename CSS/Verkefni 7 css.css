@@ -343,7 +343,7 @@ a:active{
 @media only screen and (max-width:48em){
     footer{
         grid-template-columns: 1fr;
-        font-size: 15px;
+        font-size: 13px;
     }
 }
 
