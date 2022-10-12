@@ -147,7 +147,7 @@ footer{
 footer{
     color: #e9e1d3;
     background-color: rgb(0, 54, 0);
-    font-size: 13px;
+    font-size: 15px;
     grid-template-columns: 1fr 1fr 1fr;
     margin-right: 0.5em;
 }
@@ -343,7 +343,7 @@ a:active{
 @media only screen and (max-width:48em){
     footer{
         grid-template-columns: 1fr;
-        font-size: 13px;
+        font-size: 15px;
     }
 }
 
