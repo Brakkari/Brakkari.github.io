@@ -78,6 +78,7 @@ header > p{
     background-image: url("../mindir/OuterWilds.webp");
     background-repeat: no-repeat;
     background-size: contain;
+    background-position: center;
 }
 .center{
     margin: auto;
