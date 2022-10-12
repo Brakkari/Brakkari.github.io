@@ -312,7 +312,7 @@ a:active{
     height:33em; /*534px;*/ 
   }
   .space{
-    height: 50em;
+    height: 70em;
     }
 }
 @media screen and (min-width: 100em) {
@@ -321,7 +321,7 @@ a:active{
       height:44em; /*~702px;*/ 
     }
     .space{
-        height: 50em;
+        height: 90em;
     }
 
 } 
