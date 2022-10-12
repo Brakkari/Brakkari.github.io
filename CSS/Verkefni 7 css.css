@@ -306,13 +306,22 @@ a:active{
     height: 50em;
     }
 }
-@media screen and (min-width:80em){
+@media screen and (min-width:65em){
   .gluggi {
 
     height:33em; /*534px;*/ 
   }
   .space{
-    height: 70em;
+    height: 60em;
+    }
+}
+@media screen and (min-width:70em){
+  .gluggi {
+
+    height:33em; /*534px;*/ 
+  }
+  .space{
+    height: 65em;
     }
 }
 @media screen and (min-width: 100em) {
